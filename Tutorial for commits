@@ -20,14 +20,9 @@ Thomass-MBP:seq12 tomweavernz$ git commit -m "Add test2.txt"
 [master fcb5791] Add test2.txt
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test2.txt
-Thomass-MBP:seq12 tomweavernz$ git remote add origin https://github.com/tomweavernz/seq12.git
-fatal: remote origin already exists.
 Thomass-MBP:seq12 tomweavernz$ git remote -v
 origin	https://github.com/tomweavernz/seq12.git (fetch)
 origin	https://github.com/tomweavernz/seq12.git (push)
-Thomass-MBP:seq12 tomweavernz$ git push
-remote: Invalid username or password.
-fatal: Authentication failed for 'https://github.com/tomweavernz/seq12.git/'
 Thomass-MBP:seq12 tomweavernz$ git push origin master
 Username for 'https://github.com': tomweavernz
 Password for 'https://tomweavernz@github.com':
@@ -40,4 +35,4 @@ To https://github.com/tomweavernz/seq12.git
  * [new branch]      master -> master
 Thomass-MBP:seq12 tomweavernz$ git push
 Everything up-to-date
-Thomass-MBP:seq12 tomweavernz$ 
+Thomass-MBP:seq12 tomweavernz$s
