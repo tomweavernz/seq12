@@ -1,0 +1,43 @@
+Thomass-MBP:seq12 tomweavernz$ cd ~/seq12
+Thomass-MBP:seq12 tomweavernz$ seq12
+-bash: seq12: command not found
+Thomass-MBP:seq12 tomweavernz$ git init
+Reinitialized existing Git repository in /Users/tomweavernz/seq12/.git/
+Thomass-MBP:seq12 tomweavernz$ git status
+On branch master
+nothing to commit, working directory clean
+Thomass-MBP:seq12 tomweavernz$ touch test2.txt
+Thomass-MBP:seq12 tomweavernz$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+Thomass-MBP:seq12 tomweavernz$ git add test2.txt
+Thomass-MBP:seq12 tomweavernz$ git commit -m "Add test2.txt"
+[master fcb5791] Add test2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.txt
+Thomass-MBP:seq12 tomweavernz$ git remote add origin https://github.com/tomweavernz/seq12.git
+fatal: remote origin already exists.
+Thomass-MBP:seq12 tomweavernz$ git remote -v
+origin	https://github.com/tomweavernz/seq12.git (fetch)
+origin	https://github.com/tomweavernz/seq12.git (push)
+Thomass-MBP:seq12 tomweavernz$ git push
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/tomweavernz/seq12.git/'
+Thomass-MBP:seq12 tomweavernz$ git push origin master
+Username for 'https://github.com': tomweavernz
+Password for 'https://tomweavernz@github.com':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 396 bytes | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To https://github.com/tomweavernz/seq12.git
+ * [new branch]      master -> master
+Thomass-MBP:seq12 tomweavernz$ git push
+Everything up-to-date
+Thomass-MBP:seq12 tomweavernz$ 
